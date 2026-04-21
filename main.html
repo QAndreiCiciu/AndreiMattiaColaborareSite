@@ -15,8 +15,10 @@
 		body{
 			background-color:#573921;
 			display:flex;
-			justify-content:center;
+			align-content:center;
 			align-items:center;
+			flex-direction:column;
+			gap:20px;
 		}
 		button{
 			background-color:#B26327;
@@ -25,11 +27,64 @@
 		font{
 			font-size:25px;
 		}
+		.despreDiv{
+			background-color:#BD875C;
+			border:solid #B26327 5px;
+			border-radius:25px;
+			height:90%;
+			width:70%;
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			flex-direction:column;
+			gap:20px;
+		}
+		.profile{
+			height:100%;
+			width:100%;
+		}
+		.info{
+		height:80%;
+		width:95%;
+		display:flex;
+		gap:20px;
+		}
+		.images{
+			height:175px;
+			width:160px;
+			content:fit;
+		}
+		.infoText{
+			<!--background-color:white; --!>
+			height:100%;
+			width:70%;
+		}
+		.title{
+			font-size:50px;
+		}
 	</style>
 	<body>
 		<div class="contentDiv">
 			<button><font>Poop</font></button>
 			<button><font>Flush</font></button>
+		</div>
+		
+		<div class="despreDiv">
+			
+			<font class="title">Despre noi</font>
+			<div class="info">
+				<div class="images">
+					<img class="profile" src="./assets/Mattia.jpg">
+				</div>
+				<div class="infoText">
+					<font>
+						Andrei si Mattia sunt o miscare revolutionara in domeniul IT si tot ce inseamna aceasta. Noi suntem Kirk, noi vom fi urmatoarea generatie, elita umanitatii, vom cucerii lumea. Beware.
+					</font>
+				</div>
+				<div class="images">
+					<img class="profile" src="./assets/Andrei.jpeg">
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
